@@ -1,0 +1,152 @@
+body {
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  font-family: 'Arial', sans-serif; /* Use a cleaner font */
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+  font-size: large;
+  margin: 0; /* Remove extra margin */
+}
+
+.welcome-screen {
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center text */
+  max-width: 500px;
+  width: 100%;
+}
+
+.welcome-image {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.welcome-screen h1 {
+  color: #333;
+  font-size: 2.5rem; /* Increased font size */
+  margin-bottom: 10px;
+}
+
+.welcome-screen p {
+  color: #666;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.welcome-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 24px; /* Increased padding */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem; /* Increased font size */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.welcome-btn:hover {
+  background-color: #45a049;
+  transform: scale(1.05); /* Scale effect */
+}
+
+/* Adjust form container */
+form {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  font-weight: bold;
+  color: #555; /* Slightly darker label */
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 10px; /* Increased padding */
+  font-size: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #66afe9; /* Highlight color on focus */
+  box-shadow: 0 0 5px rgba(102, 175, 233, 0.5); /* Focus shadow */
+}
+
+.form-group {
+  margin-bottom: 1.5rem; /* Increased spacing */
+}
+
+.btn {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  padding: 10px 15px; /* Increased padding */
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0b5ed7;
+  transform: scale(1.05); /* Scale effect */
+}
+
+/* Adjust the layout on mobile */
+@media (max-width: 768px) {
+  .App {
+    padding: 20px;
+  }
+
+  .welcome-screen {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  form {
+    padding: 20px;
+  }
+}
+
+.form-group input[type="file"] {
+  border: 1px solid #ced4da;
+  padding: 0.375rem;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.suggestions {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  max-height: 150px;
+  overflow-y: auto;
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  z-index: 1; /* Make sure it's on top */
+}
+
+.suggestions li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestions li:hover {
+  background-color: #f0f0f0; /* Highlight on hover */
+}
